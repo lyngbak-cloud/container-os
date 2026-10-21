@@ -50,6 +50,7 @@ jobs:
         run: |
           python scripts/check_ubuntu_digest.py 22.04 --record || true
           python scripts/check_ubuntu_digest.py 24.04 --record || true
+          python scripts/check_ubuntu_digest.py 26.04 --record || true
       
       - name: Check for significant changes
         id: check_changes

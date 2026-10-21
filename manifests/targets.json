@@ -1,25 +1,5 @@
 {
   "channels": {
-    "stable-alpine3.19-dockerd": {
-      "engine": "dockerd",
-      "os": "alpine",
-      "version": "3.19"
-    },
-    "stable-alpine3.19-podman": {
-      "engine": "podman",
-      "os": "alpine",
-      "version": "3.19"
-    },
-    "stable-alpine3.20-dockerd": {
-      "engine": "dockerd",
-      "os": "alpine",
-      "version": "3.20"
-    },
-    "stable-alpine3.20-podman": {
-      "engine": "podman",
-      "os": "alpine",
-      "version": "3.20"
-    },
     "stable-alpine3.21-dockerd": {
       "engine": "dockerd",
       "os": "alpine",
@@ -79,6 +59,16 @@
       "engine": "podman",
       "os": "alpine",
       "version": "3.24"
+    },
+    "stable-ubuntu26-dockerd": {
+      "engine": "dockerd",
+      "os": "ubuntu",
+      "version": "26.04"
+    },
+    "stable-ubuntu26-podman": {
+      "engine": "podman",
+      "os": "ubuntu",
+      "version": "26.04"
     }
   },
   "docker_compose_version": "v5.6.1",
@@ -87,66 +77,6 @@
   },
   "targets": {
     "alpine": {
-      "3.19": {
-        "alias_patch": "3.19.9",
-        "base": "3.19",
-        "packages": {
-          "common": [
-            "bash",
-            "supervisor",
-            "openssh",
-            "dcron",
-            "iptables-legacy",
-            "fuse-overlayfs",
-            "fuse3",
-            "sudo",
-            "e2fsprogs",
-            "e2fsprogs-extra",
-            "util-linux"
-          ],
-          "dockerd": [
-            "docker",
-            "docker-cli-compose",
-            "containerd"
-          ],
-          "podman": [
-            "podman",
-            "podman-docker",
-            "slirp4netns",
-            "shadow-subids"
-          ]
-        }
-      },
-      "3.20": {
-        "alias_patch": "3.20.10",
-        "base": "3.20",
-        "packages": {
-          "common": [
-            "bash",
-            "supervisor",
-            "openssh",
-            "dcron",
-            "iptables-legacy",
-            "fuse-overlayfs",
-            "fuse3",
-            "sudo",
-            "e2fsprogs",
-            "e2fsprogs-extra",
-            "util-linux"
-          ],
-          "dockerd": [
-            "docker",
-            "docker-cli-compose",
-            "containerd"
-          ],
-          "podman": [
-            "podman",
-            "podman-docker",
-            "slirp4netns",
-            "shadow-subids"
-          ]
-        }
-      },
       "3.21": {
         "alias_patch": "3.21.8",
         "base": "3.21",
@@ -303,6 +233,40 @@
       "24.04": {
         "alias_patch": "24.04",
         "base": "24.04",
+        "packages": {
+          "common": [
+            "curl",
+            "supervisor",
+            "iptables",
+            "fuse-overlayfs",
+            "fuse3",
+            "openssh-server",
+            "cron",
+            "sudo",
+            "e2fsprogs",
+            "util-linux"
+          ],
+          "dockerd": [
+            "docker-ce",
+            "docker-ce-cli",
+            "containerd.io",
+            "docker-buildx-plugin",
+            "docker-compose-plugin"
+          ],
+          "podman": [
+            "ca-certificates",
+            "gnupg",
+            "lsb-release",
+            "podman",
+            "podman-docker",
+            "uidmap",
+            "slirp4netns"
+          ]
+        }
+      },
+      "26.04": {
+        "alias_patch": "26.04",
+        "base": "26.04",
         "packages": {
           "common": [
             "curl",
