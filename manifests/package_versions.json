@@ -165,6 +165,36 @@
         "slirp4netns": "1.2.1-1build2",
         "uidmap": "1:4.13+dfsg1-4ubuntu3.2"
       }
+    },
+    "26.04": {
+      "common": {
+        "cron": "3.0pl1-200ubuntu1",
+        "curl": "8.18.0-1ubuntu2.8",
+        "e2fsprogs": "1.47.2-3ubuntu4",
+        "fuse-overlayfs": "1.14-1build2",
+        "fuse3": "3.18.2-1",
+        "iptables": "1.8.11-2ubuntu3",
+        "openssh-server": "1:10.2p1-2ubuntu3.8",
+        "sudo": "1.9.17p2-1ubuntu3.2",
+        "supervisor": "4.3.0-1",
+        "util-linux": "2.41.3-3ubuntu2.2"
+      },
+      "dockerd": {
+        "containerd.io": "2.4.2-3~ubuntu.26.04~resolute",
+        "docker-buildx-plugin": "0.38.1-1~ubuntu.26.04~resolute",
+        "docker-ce": "5:29.9.2-1~ubuntu.26.04~resolute",
+        "docker-ce-cli": "5:29.9.2-1~ubuntu.26.04~resolute",
+        "docker-compose-plugin": "5.6.1-1~ubuntu.26.04~resolute"
+      },
+      "podman": {
+        "ca-certificates": "20260816ubuntu0.26.04.1",
+        "gnupg": "2.4.8-4ubuntu3.1",
+        "lsb-release": "12.1-2build1",
+        "podman": "5.7.0+ds2-3build1",
+        "podman-docker": "5.7.0+ds2-3build1",
+        "slirp4netns": "1.3.3-1",
+        "uidmap": "1:4.17.4-2ubuntu3"
+      }
     }
   }
 }

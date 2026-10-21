@@ -19,7 +19,7 @@ make build-and-verify
 ```
 
 This single command will:
-1. Build all image variants (12 total: Ubuntu 22.04/24.04 + Alpine 3.21/3.22/3.23/3.24, each with dockerd/podman)
+1. Build all image variants (14 total: Ubuntu 22.04/24.04/26.04 + Alpine 3.21/3.22/3.23/3.24, each with dockerd/podman)
 2. Start each container and verify installed package versions
 3. Update `manifests/package_versions.json` with actual verified versions
 4. Regenerate the README component versions table

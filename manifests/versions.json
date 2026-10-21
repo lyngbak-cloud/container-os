@@ -2,7 +2,8 @@
   "sources": {
     "ubuntu": {
       "22.04": "https://hub.docker.com/_/ubuntu?tab=tags&page=1&name=22.04",
-      "24.04": "https://hub.docker.com/_/ubuntu?tab=tags&page=1&name=24.04"
+      "24.04": "https://hub.docker.com/_/ubuntu?tab=tags&page=1&name=24.04",
+      "26.04": "https://hub.docker.com/_/ubuntu?tab=tags&page=1&name=26.04"
     },
     "alpine": {
       "3.21": "https://hub.docker.com/_/alpine?tab=tags&page=1&name=3.21",
