@@ -69,7 +69,9 @@ def build_engine_snippets(os_name: str, engine: str) -> Dict[str, str]:
                 "tee /etc/apt/sources.list.d/docker.list > /dev/null"
             )
             engine_config_copy = (
-                "COPY config/dockerd.conf /etc/supervisor/conf.d/dockerd.conf"
+                "COPY config/dockerd.conf /etc/supervisor/conf.d/dockerd.conf\n"
+                "COPY scripts/dockerd-start.sh /usr/local/bin/dockerd-start\n"
+                "RUN chmod +x /usr/local/bin/dockerd-start"
             )
         elif engine == "podman":
             engine_repo_setup = ""
@@ -82,7 +84,9 @@ def build_engine_snippets(os_name: str, engine: str) -> Dict[str, str]:
         engine_post_install = ""
         if engine == "dockerd":
             engine_config_copy = (
-                "COPY config/dockerd.conf /etc/supervisor/conf.d/dockerd.conf"
+                "COPY config/dockerd.conf /etc/supervisor/conf.d/dockerd.conf\n"
+                "COPY scripts/dockerd-start.sh /usr/local/bin/dockerd-start\n"
+                "RUN chmod +x /usr/local/bin/dockerd-start"
             )
         elif engine == "podman":
             engine_config_copy = (
