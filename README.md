@@ -103,6 +103,10 @@ Every image starts `supervisord`, which launches and supervises the following pr
 
 During boot the entrypoint script prepares `/run/sshd`, `/var/run/sshd`, `/var/spool/cron`, and runtime state for Podman when applicable.
 
+## Docker Network MTU
+
+dockerd variants start dockerd with the MTU of `eth0`, applied to the default bridge and to new networks, so containers never send packets larger than the VM network carries. Set `DOCKERD_MTU` to use another value, or `DOCKERD_MTU=off` to keep Docker's default. Values already set in `/etc/docker/daemon.json` take precedence.
+
 ## Running the Images Locally
 
 All flavors expect privileged execution. When testing, run with `--privileged` (or the equivalent in your orchestration system) and map ports as needed for SSH.

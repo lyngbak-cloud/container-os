@@ -64,6 +64,8 @@ COPY config/supervisord.conf /etc/supervisord.conf
 COPY config/sshd.conf /etc/supervisor/conf.d/sshd.conf
 COPY config/crond.conf /etc/supervisor/conf.d/crond.conf
 COPY config/dockerd.conf /etc/supervisor/conf.d/dockerd.conf
+COPY scripts/dockerd-start.sh /usr/local/bin/dockerd-start
+RUN chmod +x /usr/local/bin/dockerd-start
 
 COPY scripts/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
