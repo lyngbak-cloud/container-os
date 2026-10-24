@@ -20,26 +20,6 @@
       "os": "alpine",
       "version": "3.22"
     },
-    "stable-ubuntu22-dockerd": {
-      "engine": "dockerd",
-      "os": "ubuntu",
-      "version": "22.04"
-    },
-    "stable-ubuntu22-podman": {
-      "engine": "podman",
-      "os": "ubuntu",
-      "version": "22.04"
-    },
-    "stable-ubuntu24-dockerd": {
-      "engine": "dockerd",
-      "os": "ubuntu",
-      "version": "24.04"
-    },
-    "stable-ubuntu24-podman": {
-      "engine": "podman",
-      "os": "ubuntu",
-      "version": "24.04"
-    },
     "stable-alpine3.23-dockerd": {
       "engine": "dockerd",
       "os": "alpine",
@@ -60,6 +40,26 @@
       "os": "alpine",
       "version": "3.24"
     },
+    "stable-ubuntu22-dockerd": {
+      "engine": "dockerd",
+      "os": "ubuntu",
+      "version": "22.04"
+    },
+    "stable-ubuntu22-podman": {
+      "engine": "podman",
+      "os": "ubuntu",
+      "version": "22.04"
+    },
+    "stable-ubuntu24-dockerd": {
+      "engine": "dockerd",
+      "os": "ubuntu",
+      "version": "24.04"
+    },
+    "stable-ubuntu24-podman": {
+      "engine": "podman",
+      "os": "ubuntu",
+      "version": "24.04"
+    },
     "stable-ubuntu26-dockerd": {
       "engine": "dockerd",
       "os": "ubuntu",
@@ -73,12 +73,12 @@
   },
   "docker_compose_version": "v5.6.1",
   "metadata": {
-    "last_updated": "2026-10-21T09:50:38Z"
+    "last_updated": "2026-10-24T09:20:12Z"
   },
   "targets": {
     "alpine": {
       "3.21": {
-        "alias_patch": "3.21.8",
+        "alias_patch": "3.21.9",
         "base": "3.21",
         "packages": {
           "common": [
@@ -108,7 +108,7 @@
         }
       },
       "3.22": {
-        "alias_patch": "3.22.6",
+        "alias_patch": "3.22.7",
         "base": "3.22",
         "packages": {
           "common": [
@@ -138,7 +138,7 @@
         }
       },
       "3.23": {
-        "alias_patch": "3.23.6",
+        "alias_patch": "3.23.7",
         "base": "3.23",
         "packages": {
           "common": [
@@ -168,7 +168,7 @@
         }
       },
       "3.24": {
-        "alias_patch": "3.24.2",
+        "alias_patch": "3.24.3",
         "base": "3.24",
         "packages": {
           "common": [
@@ -300,5 +300,5 @@
       }
     }
   },
-  "version": "1.1.0"
+  "version": "1.1.1"
 }
