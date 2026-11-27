@@ -86,7 +86,7 @@
         "dcron": "4.6-r0",
         "e2fsprogs": "1.47.4-r0",
         "e2fsprogs-extra": "1.47.4-r0",
-        "fuse-overlayfs": "1.16-r0",
+        "fuse-overlayfs": "1.18-r0",
         "fuse3": "3.18.3-r0",
         "iptables-legacy": "1.8.13-r0",
         "openssh": "10.3_p1-r2",
@@ -100,14 +100,14 @@
         "docker-cli-compose": "5.7.2-r0"
       },
       "podman": {
-        "podman": "5.8.10-r0",
-        "podman-docker": "5.8.10-r0",
-        "shadow-subids": "4.18.0-r1",
+        "podman": "5.8.11-r0",
+        "podman-docker": "5.8.11-r0",
+        "shadow-subids": "4.20.4-r0",
         "slirp4netns": "1.3.3-r0"
       }
     }
   },
-  "docker_compose_version": "v5.8.0",
+  "docker_compose_version": "v5.8.1",
   "ubuntu": {
     "22.04": {
       "common": {
@@ -124,10 +124,10 @@
       },
       "dockerd": {
         "containerd.io": "2.4.2-4~ubuntu.22.04~jammy",
-        "docker-buildx-plugin": "0.39.0-1~ubuntu.22.04~jammy",
-        "docker-ce": "5:29.10.0-1~ubuntu.22.04~jammy",
-        "docker-ce-cli": "5:29.10.0-1~ubuntu.22.04~jammy",
-        "docker-compose-plugin": "5.8.0-1~ubuntu.22.04~jammy"
+        "docker-buildx-plugin": "0.39.1-1~ubuntu.22.04~jammy",
+        "docker-ce": "5:29.10.1-1~ubuntu.22.04~jammy",
+        "docker-ce-cli": "5:29.10.1-1~ubuntu.22.04~jammy",
+        "docker-compose-plugin": "5.8.1-1~ubuntu.22.04~jammy"
       },
       "podman": {
         "podman": "3.4.4+ds1-1ubuntu1.22.04.3",
@@ -151,10 +151,10 @@
       },
       "dockerd": {
         "containerd.io": "2.4.2-4~ubuntu.24.04~noble",
-        "docker-buildx-plugin": "0.39.0-1~ubuntu.24.04~noble",
-        "docker-ce": "5:29.10.0-1~ubuntu.24.04~noble",
-        "docker-ce-cli": "5:29.10.0-1~ubuntu.24.04~noble",
-        "docker-compose-plugin": "5.8.0-1~ubuntu.24.04~noble"
+        "docker-buildx-plugin": "0.39.1-1~ubuntu.24.04~noble",
+        "docker-ce": "5:29.10.1-1~ubuntu.24.04~noble",
+        "docker-ce-cli": "5:29.10.1-1~ubuntu.24.04~noble",
+        "docker-compose-plugin": "5.8.1-1~ubuntu.24.04~noble"
       },
       "podman": {
         "ca-certificates": "20260816ubuntu0.24.04.2",
@@ -181,10 +181,10 @@
       },
       "dockerd": {
         "containerd.io": "2.4.2-4~ubuntu.26.04~resolute",
-        "docker-buildx-plugin": "0.39.0-1~ubuntu.26.04~resolute",
-        "docker-ce": "5:29.10.0-1~ubuntu.26.04~resolute",
-        "docker-ce-cli": "5:29.10.0-1~ubuntu.26.04~resolute",
-        "docker-compose-plugin": "5.8.0-1~ubuntu.26.04~resolute"
+        "docker-buildx-plugin": "0.39.1-1~ubuntu.26.04~resolute",
+        "docker-ce": "5:29.10.1-1~ubuntu.26.04~resolute",
+        "docker-ce-cli": "5:29.10.1-1~ubuntu.26.04~resolute",
+        "docker-compose-plugin": "5.8.1-1~ubuntu.26.04~resolute"
       },
       "podman": {
         "ca-certificates": "20260816ubuntu0.26.04.2",
